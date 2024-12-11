@@ -1,5 +1,6 @@
 import React from "react";
-import { Card } from "./Card";
+// import { Card } from "./Card";
+const Card = React.lazy(() => import("./Card"));
 
 const Sponsers = () => {
   return (

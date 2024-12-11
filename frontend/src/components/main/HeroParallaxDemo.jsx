@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { HeroParallax } from "../ui/hero-parallax";
+// import { HeroParallax } from "../ui/hero-parallax";
+const { HeroParallax } = React.lazy(() => import("../ui/hero-parallax"));
 
 export function HeroParallaxDemo() {
   return <HeroParallax products={products} />;

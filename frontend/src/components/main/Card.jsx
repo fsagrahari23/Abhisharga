@@ -1,8 +1,10 @@
-"use client";
-
 import React from "react";
-import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
+
 import { Link } from "react-router-dom";
+
+const { CardBody, CardContainer, CardItem } = React.lazy(() =>
+  import("../ui/3d-card")
+);
 
 export function Card() {
   return (

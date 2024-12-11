@@ -13,5 +13,15 @@ export default defineConfig({
   },
   server: {
     port: 5173
-  }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'], // Separate vendor libraries
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000, // Set the limit to 1000 KB or more
+  },
 })

@@ -1,5 +1,6 @@
 import React from "react";
-import { Timeline } from "@/components/ui/timeline";
+// import { Timeline } from "@/components/ui/timeline";
+const { Timeline } = React.lazy(() => import("../ui/timeline"));
 
 export function TimelineDemo() {
   const data = [
