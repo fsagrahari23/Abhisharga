@@ -1,13 +1,9 @@
-import React from "react";
-import { SparklesCore } from "../ui/sparkles";
-// import { HeroParallaxDemo } from "./HeroParallaxDemo";
-// import Sponsers from "./Sponsers";
-const Sponsers = React.lazy(() => import("./Sponsers"));
-const HeroParallaxDemo = React.lazy(() => import("./HeroParallaxDemo"));
 
-// import Events from "./Events";
-const TimelineDemo = React.lazy(() => import("./Timeline"));
-const Events = React.lazy(() => import("./Events"));
+import { SparklesCore } from "../ui/sparkles";
+import { HeroParallaxDemo } from "./HeroParallaxDemo";
+import Sponsers from "./Sponsers";
+import { TimelineDemo } from "./Timeline";
+import Events from "./Events";
 
 const Sparkles = () => {
   return (

@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "@/lib/utils";
-const { HoveredLink, Menu, MenuItem, ProductItem } = React.lazy(() =>
-  import("../ui/navbar-menu")
-);
+
 export function Navbar() {
   return (
     <div className="relative w-full flex items-center justify-center">
